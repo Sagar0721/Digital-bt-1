@@ -1,0 +1,228 @@
+:root{
+    --theme-color:#ffc451;
+    --background-color: #060606;
+    --default-color: #ffffff;
+    --heading-color: #ffffff;
+    background-color: var(--them-color);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", serif;
+}
+li{
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+.w-6{
+    width:16.66%;
+}
+.w-5{
+    width: 20%;
+}
+/* header  */
+nav ul li a{
+    font-size: 18px;
+}
+
+
+
+/* benner  */
+.banner{
+    /* width: 100%;
+    height: 100vh; */
+    background-image: url('../images/benner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -9;
+}
+.banner::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.616);
+    z-index: -1;
+
+}
+.banner-item{
+    margin-top: 25px;
+}
+/* logo  */
+.clint .logo img{
+    filter:grayscale(1);
+    transition: all 0.5s linear;
+}
+.logo img:hover{
+    filter: grayscale(0);
+}
+.slick-dots li button::before{
+    font-size: 27px;
+}
+.slick-dots li.slick-active button:before{
+    color: var(--theme-color);
+}
+/* .services  */
+
+.services .services-title p::after, .protfolio .protfolio-title p::after, .team .team-title p::after, .contact .contact-title p::after{
+content: "";
+position: absolute;
+top: 50%;
+left: 90px;
+width: 80px;
+height: 1px;
+background-color: var(--theme-color);
+}
+
+.services-title p{
+font-size: 14px;
+}
+.services .services-item i{
+    width: 50px;
+    height: 50px;
+    background-color: var(--theme-color);
+    transition: all .2s;
+
+}
+
+/* call to  */
+.call-to{
+    /* padding: 60px 0;  */
+    /* position: relative;  */
+    width: 100%;
+    height: 60%;
+    background-image: url('../images/call.jpg');
+    background-color:#060606;
+}
+
+
+/* Portfolio  */
+.protfolio .protfolio-title p::after{
+    left: 50px;
+}
+  
+   .nav-pills .nav-link.active{
+    border-radius: 5px;
+    background-color: #ffc451;
+  } 
+  .protfolio-content ul li:hover{
+    border-radius: 5px;
+    background-color: #ffc451;
+  }
+ 
+  .Portfolio .protfolio-overlay {
+    width: 100%;
+    transform: translatey(100%);
+    transition: all 0.4s linear;
+  }
+  .protfolio-img:hover .protfolio-overlay{
+    transform: translatey(0%);
+  }
+ 
+
+
+/* team  */
+.team .team-title p::after{
+    left: 55px;
+}
+.card .card-body a{
+    width: 30px;
+    height: 30px;
+}
+.card .card-body{
+    transform: 48px;
+    
+}
+.team-social{
+    top: 66%;
+     /* margin-left: 8px;  */
+}
+.team-social a:hover{
+background-color: #ffc451;
+
+}
+
+/* swiper  */
+.swiper{
+width: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-image: url('../images/swiper-bg.jpg');
+}
+ .img{
+    width: 50%;
+    height: 50%;
+    border-radius: 30px;
+} 
+.swiper ::after{
+    width: 100%;
+    height:500px;
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.616);
+    z-index: -1;
+}
+.carousel-caption{
+    position: static !important;
+}
+.icons{ 
+    margin-bottom: 15px;
+} 
+
+
+/* contact  */
+.contact .contact-title p::after{
+    left: 90px;
+}
+/* footer  */
+
+.footer{
+    background-color:var(--background-color)
+}
+.footer-con h5{
+    color: #ffffff; 
+}
+.footer-con h6{
+    color: rgb(191, 195, 198);
+}
+
+.footer-cons p{
+    color: #ffffff; 
+    font-size: 10px;
+}
+ .footer-icon i{
+    font-size: 4px; 
+    color: white;
+    border: 2px solid none;
+} 
+.footer-icons i:hover{
+   /* color: black;  */
+color: #ffc451; 
+border: 2px solid none;
+padding: 5px;
+} 
+.footer-con h6:hover{
+color: #ffc451;
+}
+
+.footer-content p{
+    margin-bottom: 2px;
+}
+.footer-btn{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding: 6px 8px;
+    position: relative;
+    border-radius: 4px;
+}
+
